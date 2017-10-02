@@ -1,0 +1,112 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+
+\usepackage[margin=1.2in,top=1.0in,bottom=1.2in]{geometry} % Reduce document margins
+%\usepackage[scale=0.75,showframe]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{selinput}
+\SelectInputMappings{%
+  adieresis={ä},
+  eacute={é},
+  Lcaron={Ľ},
+}
+\usepackage{tgheros}
+%\usepackage{paratype}
+%\usepackage{lmodern}
+%\usepackage[condensed,math]{kurier}
+%\usepackage[default]{cantarell}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%\newcommand{\vs}[0]{\vspace{1mm}}
+\newcommand{\vs}[0]{\smallskip}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{DYLAN} % Your first name
+\familyname{PADDOCK} % Your last name
+%\title{Résumé}
+\address{2010 Rue Des Carrières}{H2G 1W8}{Montreal, Quebec}
+\mobile{+1 514 777 5202}
+%\phone{+81 080 8887 7242}
+\email{dylan.paddock@gmail.com}
+\social[linkedin][www.linkedin.com/in/dylan-paddock]{dylanpaddock}
+\social[github][github.com/dylanpaddock]{dylanpaddock}
+\extrainfo{\faSkype{}  dylan\_paddock}
+ % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%\photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%----------------------------------------------------------------------------------------
+%   Title configuration
+%----------------------------------------------------------------------------------------
+
+\usepackage{xpatch}
+\xpatchcmd{\makehead}{%
+\\\null}{%
+\\[-2ex]\null}{}{}
+
+
+\begin{document}
+\makecvtitle % Print the CV title
+\par
+\vspace{-4ex}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+%Name
+%Job title, work place
+%address line 1
+%address line 2
+%phone
+%email
+
+\vs
+\textbf{Eric Morris}\\
+\textit{Owner and Head Teacher, Maple English School}\\
+2-13-9 Sakuragaoka-nishi Akaiwa-shi\\
+Okayama, Japan\\
++81 086 955 9567\\
+\textcolor{gray}{\underline{englishinjapan1@gmail.com}}\\
+
+\textbf{Eiko Takamoto}\\
+\textit{Owner and Teacher, Maple English School}\\
+2-13-9 Sakuragaoka-nishi Akaiwa-shi\\
+Okayama, Japan\\
++81 086 955 9567\\
+\textcolor{gray}{\underline{englishinjapan1@gmail.com}}\\
+
+
+%\textbf{Gary Steven}\\
+%\textit{CELTA Trainer, International House Bangkok}\\
+%7th Floor, Silom 64 Building, Silom Road\\
+%Bangkok, Thailand\\
+%+662 632 6790\\
+%\texttt{gary\MVAt{}ihbangkok.com}\\
+
+
+
+
+
+
+\end{document}
