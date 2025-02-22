@@ -48,11 +48,26 @@
 
 \renewcommand{\listitemsymbol}{--~} % Changes the symbol used for lists
 
+% Remove the arbitrary 80% width restriction for the name
+\patchcmd{\makehead}
+  {\setlength{\makeheaddetailswidth}{0.8\textwidth}}
+  {\setlength{\makeheaddetailswidth}{\textwidth}}
+  {\typeout{patch success}}
+  {\typeout{patch failure}}
+
+% Add additional whitespace between the name and address
+\patchcmd{\makehead}
+  {\addressfont\color{addresscolor}}
+  {\vspace{0.1cm}\addressfont\color{addresscolor}}
+  {\typeout{patch success}}
+  {\typeout{patch failure}}
+
+
 %----------------------------------------------------------------------------------------
 % NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\name{}{DYLAN HIROSHI TAKAYASU PADDOCK} % Add space to one side for consistent centering.
+\name{}{DYLAN HIROSHI TAKAYASU PADDOCK}
 \address{42-5 Nanzenji Kitanobocho, Sakyo-ku, Kyoto-shi, Kyoto-fu, Japan}{}{606-8446}
 \mobile{+81-80-8890-4325}
 \email{dylan.paddock@gmail.com}
@@ -62,8 +77,7 @@
 % Generate the header and adjust vertical whitespace
 \begin{document}
 \makecvtitle % Print the CV title
-\par
-\vspace{-6ex}
+\vspace{-1cm}
 
 %----------------------------------------------------------------------------------------
 % EDUCATION SECTION
