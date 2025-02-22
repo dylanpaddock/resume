@@ -25,17 +25,13 @@
 % PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-
 \documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvicons{awesome}
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-
-\usepackage[margin=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} % Reduce document margins. Don't go below 1cm for printing.
-
+\usepackage[margin=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Reduce document margins. Don't go below 1cm for printing.
 \usepackage{selinput}
 \SelectInputMappings{%
   adieresis={ä},
@@ -44,37 +40,26 @@
 }
 \usepackage{tgheros}
 \usepackage{xcolor}
+\usepackage{xpatch}
 
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
 \newcommand{\vs}[0]{\smallskip}
 
-\usepackage{fontawesome5}
-\providecommand\faSkype{{\FA\symbol{"F17E}}}
+\renewcommand{\listitemsymbol}{--~} % Changes the symbol used for lists
+
 %----------------------------------------------------------------------------------------
 % NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-
-\firstname{DYLAN} % Your first name
-\familyname{PADDOCK} % Your last name
+\name{}{DYLAN HIROSHI TAKAYASU PADDOCK} % Add space to one side for consistent centering.
 \address{42-5 Nanzenji Kitanobocho, Sakyo-ku, Kyoto-shi, Kyoto-fu, Japan}{}{606-8446}
 \mobile{+81-80-8890-4325}
 \email{dylan.paddock@gmail.com}
-
 \social[linkedin][www.linkedin.com/in/dylan-paddock]{dylanpaddock}
 \social[github][github.com/dylan-mistplay]{dylan-mistplay}
 
-%----------------------------------------------------------------------------------------
-%   Title configuration
-%----------------------------------------------------------------------------------------
-
-\usepackage{xpatch}
-\xpatchcmd{\makehead}{%
-\\\null}{%
-\\[-2ex]\null}{}{}
-
-
+% Generate the header and adjust vertical whitespace
 \begin{document}
 \makecvtitle % Print the CV title
 \par
@@ -85,8 +70,6 @@
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 \cventry{Jan 2011 -- May 2015}{University of California, Berkeley}{B.Sc. in Electrical Engineering and Computer Science}{Berkeley, USA}{}{
 \cvlistitem{GPA 3.718; Dean's Honor List (every semester)}
@@ -104,7 +87,6 @@
 
 %\cventry{start time -- end time}{job title}{{employer}}{city}{}{responsibilities}\vs
 
-
 %mistplay 2
 \cventry
 {April 2023 -- January 2025}
@@ -113,7 +95,7 @@
 {New York, USA}
 {}{
 todo
-}
+}\vs
 
 %mistplay
 \cventry
@@ -130,32 +112,22 @@ todo
 \cventry{March 2016 -- July 2017}{Native English Instructor}{{Maple English School}}{Okayama, Japan}{}{Taught English as a foreign language to Japanese students of all ages. Tailored lessons to each student on a variety of topics including reading and writing development, critical thinking, math, and computer science. Developed teaching materials for classroom use and training materials for new teachers.}\vs
 
 %vienna
-\cventry{June -- July 2012}{Research Intern}{{The Vienna University of Technology}}{Vienna, Austria}{}{Conducted research on road traffic congestion and control. Programmed traffic models for use in model-predictive control systems.}
-
-
-%----------------------------------------------------------------------------------------
-%   PROJECTS SECTION
-%----------------------------------------------------------------------------------------
+\cventry{June -- July 2012}{Research Intern}{{The Vienna University of Technology}}{Vienna, Austria}{}{Conducted research on road traffic congestion. Programmed traffic models for use in model-predictive control systems.}
 
 %----------------------------------------------------------------------------------------
-% AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%   Skills SECTION
+%   SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Technical Skills}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 todo
 
 %----------------------------------------------------------------------------------------
 \vspace{-.6\baselineskip}
 \section{Language Skills}
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
 \cvlistdoubleitem{Native English}{Intermediate Japanese}
 \cvlistdoubleitem{Advanced Spanish}{Phonetics and Phonology}
+
 
 \end{document}
