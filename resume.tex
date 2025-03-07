@@ -1,10 +1,3 @@
-
-
-% Questions
-%   switch experience section job title and institution
-%   cut travel section?
-
-
 % Modified from the template below
 % Secondary author: Dylan Paddock (dylan.paddock@gmail.com)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,7 +22,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 
@@ -41,10 +34,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 
-\usepackage[margin=1.2in,top=1.0in,bottom=1.2in]{geometry} % Reduce document margins
-%\usepackage[scale=0.75,showframe]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[margin=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} % Reduce document margins. Don't go below 1cm for printing.
 
 \usepackage{selinput}
 \SelectInputMappings{%
@@ -53,40 +43,27 @@
   Lcaron={Ľ},
 }
 \usepackage{tgheros}
-%\usepackage{paratype}
-%\usepackage{lmodern}
-%\usepackage[condensed,math]{kurier}
-%\usepackage[default]{cantarell}
 \usepackage{xcolor}
 
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
-%\newcommand{\vs}[0]{\vspace{1mm}}
 \newcommand{\vs}[0]{\smallskip}
-
 
 \usepackage{fontawesome5}
 \providecommand\faSkype{{\FA\symbol{"F17E}}}
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
+% NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 
 \firstname{DYLAN} % Your first name
 \familyname{PADDOCK} % Your last name
-%\title{Résumé}
-\address{90 La Salle St. Apt 12G}{10027}{New York, NY}
-\mobile{+1 438 881 4681}
-%\phone{+81 080 8887 7242}
+\address{42-5 Nanzenji Kitanobocho, Sakyo-ku, Kyoto-shi, Kyoto-fu, Japan}{}{606-8446}
+\mobile{+81-80-8890-4325}
 \email{dylan.paddock@gmail.com}
 
 \social[linkedin][www.linkedin.com/in/dylan-paddock]{dylanpaddock}
-\social[github][github.com/dylanpaddock]{dylanpaddock}
 \social[github][github.com/dylan-mistplay]{dylan-mistplay}
- % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-
-%\photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-
 
 %----------------------------------------------------------------------------------------
 %   Title configuration
@@ -104,16 +81,14 @@
 \vspace{-6ex}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+% EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-%\cventry{October 2015}{International House Bangkok}{Cambridge CELTA}{Bangkok, Thailand}{}{Pass (Grade B)}\vs
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 \cventry{Jan 2011 -- May 2015}{University of California, Berkeley}{B.Sc. in Electrical Engineering and Computer Science}{Berkeley, USA}{}{
-Selected Coursework: Data Structures, Efficient Algorithms and Intractable Problems, Foundations of Computer Graphics, Introduction to Artificial Intelligence.\\
 \cvlistitem{GPA 3.718; Dean's Honor List (every semester)}
 \cvlistitem{Eta Kappa Nu Electrical and Computer Engineering Honor Society (2013)}
 \cvlistitem{Tau Beta Pi Engineering Honor Society (2012)}
@@ -122,7 +97,7 @@ Selected Coursework: Data Structures, Efficient Algorithms and Intractable Probl
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+% WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
@@ -130,23 +105,32 @@ Selected Coursework: Data Structures, Efficient Algorithms and Intractable Probl
 %\cventry{start time -- end time}{job title}{{employer}}{city}{}{responsibilities}\vs
 
 
+%mistplay 2
+\cventry
+{April 2023 -- January 2025}
+{Senior Android Engineer}
+{{Mistplay}}
+{New York, USA}
+{}{
+todo
+}
+
 %mistplay
 \cventry
-{January 2018 -- present}
-{Lead Android Engineer}
+{January 2018 -- April 2023}
+{Fullstack Software Engineer}
 {{Mistplay}}
 {Montreal, Canada}
-{}{Delivered high quality, maintainable, user-friendly features using modern Android technology and architecture. Drove engineering innovation, including adoption of cutting edge technology, continuous process improvement and clear communication. Managed weekly releases while maintaining 99.9\% crash-free users from 8,000 to 150,000 daily active users. Worked closely with a rapidly growing agile organization, mentoring new hires and coordinating with external teams.}\vs
+{}
+{
+todo
+}\vs
 
 %maple
-\cventry{March 2016 -- July 2017}{Native English Instructor}{{Maple English School}}{Okayama, Japan}{}{Taught English as a foreign language to Japanese students of all ages as the school grew from about 150 students to over 300. Delivered engaging lessons tailored to each student on a variety of topics including reading and writing development, critical thinking, math, and computer science. Developed teaching materials for classroom use and training materials for new teachers.}\vs
-
-
-%decal
-\cventry{Sept 2012 -- Dec 2014}{Course Facilitator}{{University of California, Berkeley}}{Berkeley, USA}{}{Designed and taught eight semester-long courses for UC Berkeley students on subjects including \textit{Strategy in Tabletop Gaming}, \textit{Close Readings in Modern Speculative Fiction}, and \textit{Tea}. Assigned and assessed student work for comprehension and critical analysis. Coordinated guest speakers, author events, and screenings.}\vs
+\cventry{March 2016 -- July 2017}{Native English Instructor}{{Maple English School}}{Okayama, Japan}{}{Taught English as a foreign language to Japanese students of all ages. Tailored lessons to each student on a variety of topics including reading and writing development, critical thinking, math, and computer science. Developed teaching materials for classroom use and training materials for new teachers.}\vs
 
 %vienna
-\cventry{June -- July 2012}{Researcher}{{The Vienna University of Technology}}{Vienna, Austria}{}{Conducted research on road traffic congestion and control. Programmed traffic models for use in model-predictive control systems.}
+\cventry{June -- July 2012}{Research Intern}{{The Vienna University of Technology}}{Vienna, Austria}{}{Conducted research on road traffic congestion and control. Programmed traffic models for use in model-predictive control systems.}
 
 
 %----------------------------------------------------------------------------------------
@@ -154,7 +138,7 @@ Selected Coursework: Data Structures, Efficient Algorithms and Intractable Probl
 %----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
-%	AWARDS SECTION
+% AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
@@ -165,31 +149,13 @@ Selected Coursework: Data Structures, Efficient Algorithms and Intractable Probl
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Kotlin}{Android SDK}
-\cvlistdoubleitem{Java}{Node.js}
-\cvlistdoubleitem{C/C++/C\#}{Python}
-\cvlistdoubleitem{Agile}{Git}
+todo
 
 %----------------------------------------------------------------------------------------
 \vspace{-.6\baselineskip}
 \section{Language Skills}
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-\cvlistdoubleitem{Native English}{Elementary Japanese}
+\cvlistdoubleitem{Native English}{Intermediate Japanese}
 \cvlistdoubleitem{Advanced Spanish}{Phonetics and Phonology}
-%----------------------------------------------------------------------------------------
-%	Interests SECTION
-%----------------------------------------------------------------------------------------
-%
-%\section{Interests}
-%\cvlistdoubleitem{Linguistics}{Photography}
-%\cvlistdoubleitem{Fantasy literature}{Strategy in tabletop games}
-%----------------------------------------------------------------------------------------
-%	Travel SECTION
-%----------------------------------------------------------------------------------------
-% \vspace{-.6\baselineskip}
-% \section{Travel}
-% \cvlistitem{Lived in Moscow, Jakarta, Singapore, Guatemala, Vienna, Bangkok and Okayama, Japan.}
-% \cvlistitem{Traveled to over 50 countries, including Bhutan, Romania, Tunisia, Palau, and Bolivia.}
-% \cvlistitem{Effective at communication across different cultures and linguistic backgrounds.}
 
 \end{document}
