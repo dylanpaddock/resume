@@ -33,13 +33,8 @@
 \moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvicons{awesome}
 
-\usepackage[margin=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Reduce document margins. Don't go below 1cm for printing.
-\usepackage{selinput}
-\SelectInputMappings{%
-  adieresis={ä},
-  eacute={é},
-  Lcaron={Ľ},
-}
+\usepackage[margin=2cm,top=2.4cm,bottom=2.4cm]{geometry} % Reduce document margins. Don't go below 1cm for printing.
+
 \usepackage{tgheros}
 \usepackage{xcolor}
 \usepackage{xpatch}
@@ -49,6 +44,10 @@
 \newcommand{\vs}[0]{\smallskip}
 
 \renewcommand{\listitemsymbol}{--~} % Changes the symbol used for lists
+
+\usepackage[notext,notextcomp]{stix}
+\usepackage{newunicodechar}
+\newunicodechar{〒}{\texttt{$\postalmark$}}
 
 % Remove the arbitrary 80% width restriction for the name
 \patchcmd{\makehead}
@@ -68,10 +67,11 @@
 %----------------------------------------------------------------------------------------
 % NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
+\usepackage{hyperref}
 
 \name{}{DYLAN HIROSHI TAKAYASU PADDOCK}
-\address{42-5 Nanzenji Kitanobocho, Sakyo Ward, Kyoto, Kyoto Prefecture, Japan}{}{606-8446}
-\mobile{+81-80-8890-4325}
+\address{42-5 Nanzenji Kitanobocho, Sakyo Ward, Kyoto, Kyoto Prefecture, Japan, 〒\,606-8446}{}{}
+\mobile{\href{tel:+818088904325}{+81-80-8890-4325}}
 \email{dylan.paddock@gmail.com}
 \social[linkedin][www.linkedin.com/in/dylanpaddock]{dylanpaddock}
 \social[github][github.com/dylan-mistplay]{dylan-mistplay}
@@ -86,8 +86,8 @@
 % PROFESSIONAL SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 \section{Professional Summary}
+\vspace{-0.8mm}
 Highly-skilled Android engineer with 7\texttt{+} years experience and an international background. Played a pivotal role in the success of mobile gaming advertisement company Mistplay, from a two-employee startup to 250 employees and acquisition by a venture capital firm. 
-
 
 %----------------------------------------------------------------------------------------
 % EDUCATION SECTION
@@ -150,6 +150,7 @@ Highly-skilled Android engineer with 7\texttt{+} years experience and an interna
 %----------------------------------------------------------------------------------------
 
 \section{Skills}
+\vspace{-0.8mm}
 \cvitem{Android Development}{Kotlin, Android SDK, Clean Architecture, Jetpack Compose with Compose Navigation and Animation, Koin, MVVM, Room, Retrofit, Coroutine, Flow}
 \cvitem{App Development}{Analytics, Monitoring, Performance Optimization, Feature Management, Design Systems, Accessibility, Codebase Modularization, Localization, Internationalization, SDKs, Documentation, Code Review}
 \cvitem{Backend and Cloud Development}{Amazon Web Services, System Architecture, Node.js, Docker, REST}
